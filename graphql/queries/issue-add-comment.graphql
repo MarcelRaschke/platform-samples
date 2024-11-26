@@ -1,0 +1,13 @@
+# Get ISSUE_ID from graphql/queries/repos-get-last-issue-comment.graphql
+
+mutation {
+    addComment (
+        input: {
+            body: "Added by GraphQL",
+            subjectId:"ISSUE_ID"
+        })
+
+    {
+        clientMutationId
+    }
+}
